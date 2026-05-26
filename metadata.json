@@ -1,0 +1,8 @@
+{
+  "name": "Test JS Example",
+  "type": "helper",
+  "properties": {
+    "user_type": "all", 
+    "component": "all"
+  }
+}
