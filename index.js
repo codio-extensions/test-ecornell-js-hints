@@ -6,7 +6,7 @@
   async function onButtonPress() {
     console.info("[JS Hint v2] getContext:start");
     const context = await codioIDE.coachBot.getContext();
-    console.info("[Jupyter Hint v2] getContext:success", summarizeContext(context));
+    // console.info("[Jupyter Hint v2] getContext:success", summarizeContext(context));
 
     const studentFile = context.files[0].content
     const guidePage = content.guidesPage.content
