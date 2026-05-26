@@ -1,14 +1,9 @@
 // JS Test
 (async function (codioIDE, window) {
 
-  codioIDE.coachBot.register(
-    "customHintsJSv2",
-    "JS hint button",
-    onButtonPress
-  );
+  codioIDE.coachBot.register("customHintsJSv2", "JS hint button", onButtonPress)
 
   async function onButtonPress() {
-    codioIDE.coachBot.showThinkingAnimation();
     console.info("[JS Hint v2] getContext:start");
     const context = await codioIDE.coachBot.getContext();
     console.info("[Jupyter Hint v2] getContext:success", summarizeContext(context));
@@ -22,6 +17,6 @@
       vars: {
         STUDENT_FILE: studentFile
       }
-    }
+    });
   }
 }
